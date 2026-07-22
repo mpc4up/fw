@@ -1,0 +1,11 @@
+# gerado por gerar_modelo_3d.py — Estágio 7b
+task: tinyhouse-resex
+obs: state
+obs_shape: {state: [118]}
+action_dim: 20
+episode_length: 500
+discount_denom: 5
+seed: 1
+# ---- fine-tuning a partir do checkpoint multi-task oficial ----
+# checkpoint: /caminho/para/tdmpc2-multitask-{5,19,48,317}M.pt
+# multitask: false        # false = fine-tune single-task a partir dos pesos multi-task
